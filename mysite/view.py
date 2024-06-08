@@ -1,6 +1,7 @@
 from django.http import HttpRequest, HttpResponse
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("hello")
+    return render(request, 'index.html')
 def about(request):
     return HttpResponse("word")

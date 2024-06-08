@@ -20,6 +20,6 @@ from . import view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', view.index, name="index"),
-    path('about', view.about, name="about")
+    path('removepunc', view.removepunc, name="removepunc")
 
 ]
